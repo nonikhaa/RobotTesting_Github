@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.5 on win32)" generated="20180731 16:03:40.235">
+<suite id="s1" name="MyTestSuite" source="D:\Noni\python\source\contoh robot framework\belajar_2\MyTestSuite.robot">
+<test id="s1-t1" name="Test Github Flow">
+<kw name="Github Login Flow Should Pass" library="01_AutoLoginBot">
+<kw name="Open Page" library="01_AutoLoginBot">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180731 16:03:40.460" level="INFO">Opening browser 'Firefox' to base url 'https://github.com/'.</msg>
+<status status="PASS" starttime="20180731 16:03:40.460" endtime="20180731 16:04:12.832"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20180731 16:04:12.832" endtime="20180731 16:04:16.363"></status>
+</kw>
+<status status="PASS" starttime="20180731 16:03:40.460" endtime="20180731 16:04:16.363"></status>
+</kw>
+<kw name="Find SignIn Button" library="01_AutoLoginBot">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${SignInBtn}</arg>
+</arguments>
+<msg timestamp="20180731 16:04:16.363" level="INFO">Clicking element 'xpath=//a[@href='/login']'.</msg>
+<status status="PASS" starttime="20180731 16:04:16.363" endtime="20180731 16:04:17.313"></status>
+</kw>
+<status status="PASS" starttime="20180731 16:04:16.363" endtime="20180731 16:04:17.313"></status>
+</kw>
+<kw name="Fill login Form" library="01_AutoLoginBot">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${EmailInput}</arg>
+<arg>${Email}</arg>
+</arguments>
+<msg timestamp="20180731 16:04:17.313" level="INFO">Typing text 'noni611' into text field 'xpath=//*[@id="login_field"]'.</msg>
+<status status="PASS" starttime="20180731 16:04:17.313" endtime="20180731 16:04:17.353"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${PasswordInput}</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20180731 16:04:17.353" level="INFO">Typing password into text field 'xpath=//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20180731 16:04:17.353" endtime="20180731 16:04:17.383"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${Delay}</arg>
+</arguments>
+<msg timestamp="20180731 16:04:19.383" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20180731 16:04:17.383" endtime="20180731 16:04:19.383"></status>
+</kw>
+<status status="PASS" starttime="20180731 16:04:17.313" endtime="20180731 16:04:19.383"></status>
+</kw>
+<kw name="find SignInForm Button" library="01_AutoLoginBot">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${SignInFormBtn}</arg>
+</arguments>
+<msg timestamp="20180731 16:04:19.383" level="INFO">Clicking element 'xpath=//html/body/div[3]/div[1]/div/form/div[3]/input[3]'.</msg>
+<status status="PASS" starttime="20180731 16:04:19.383" endtime="20180731 16:04:22.610"></status>
+</kw>
+<status status="PASS" starttime="20180731 16:04:19.383" endtime="20180731 16:04:22.610"></status>
+</kw>
+<status status="PASS" starttime="20180731 16:03:40.460" endtime="20180731 16:04:22.610"></status>
+</kw>
+<kw name="Fill Bio Flow" library="02_AddBioBot">
+<kw name="Find Summary Button" library="02_AddBioBot">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${SummaryButton}</arg>
+</arguments>
+<msg timestamp="20180731 16:04:22.620" level="INFO">Clicking element 'xpath=//*[@id="user-links"]/li[3]/details/summary/span'.</msg>
+<status status="PASS" starttime="20180731 16:04:22.620" endtime="20180731 16:04:22.867"></status>
+</kw>
+<status status="PASS" starttime="20180731 16:04:22.610" endtime="20180731 16:04:22.867"></status>
+</kw>
+<kw name="Find Your Profile Button" library="02_AddBioBot">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${ProfileButton}</arg>
+</arguments>
+<msg timestamp="20180731 16:04:22.867" level="INFO">Clicking element 'xpath=//html/body/div[1]/header/div/div[2]/div[2]/ul/li[3]/details/details-menu/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20180731 16:04:22.867" endtime="20180731 16:04:24.745"></status>
+</kw>
+<status status="PASS" starttime="20180731 16:04:22.867" endtime="20180731 16:04:24.745"></status>
+</kw>
+<kw name="Case with Subject Bio Button" library="02_AddBioBot">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${Delay}</arg>
+</arguments>
+<msg timestamp="20180731 16:04:26.745" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20180731 16:04:24.745" endtime="20180731 16:04:26.745"></status>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Find Add Bio Button</arg>
+</arguments>
+<assign>
+<var>${status}</var>
+<var>${val}</var>
+</assign>
+<kw name="Find Add Bio Button" library="02_AddBioBot">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${BioButton}</arg>
+</arguments>
+<msg timestamp="20180731 16:04:26.745" level="INFO">Clicking element 'xpath=//*[@id="js-pjax-container"]/div/div[1]/div[4]/button'.</msg>
+<status status="PASS" starttime="20180731 16:04:26.745" endtime="20180731 16:04:27.005"></status>
+</kw>
+<status status="PASS" starttime="20180731 16:04:26.745" endtime="20180731 16:04:27.005"></status>
+</kw>
+<msg timestamp="20180731 16:04:27.005" level="INFO">${status} = PASS</msg>
+<msg timestamp="20180731 16:04:27.005" level="INFO">${val} = None</msg>
+<status status="PASS" starttime="20180731 16:04:26.745" endtime="20180731 16:04:27.005"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${status}' == 'PASS'</arg>
+<arg>Fill Bio Form</arg>
+</arguments>
+<kw name="Fill Bio Form" library="02_AddBioBot">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${Delay}</arg>
+</arguments>
+<msg timestamp="20180731 16:04:29.015" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20180731 16:04:27.015" endtime="20180731 16:04:29.015"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${BioArea}</arg>
+<arg>${Bio}</arg>
+</arguments>
+<msg timestamp="20180731 16:04:29.015" level="INFO">Typing text 'Dev abcd efg hij klmn opq rstu' into text field 'xpath=//html/body/div[4]/div[1]/div/div[1]/form/div/textarea'.</msg>
+<status status="PASS" starttime="20180731 16:04:29.015" endtime="20180731 16:04:29.105"></status>
+</kw>
+<status status="PASS" starttime="20180731 16:04:27.015" endtime="20180731 16:04:29.105"></status>
+</kw>
+<status status="PASS" starttime="20180731 16:04:27.005" endtime="20180731 16:04:29.105"></status>
+</kw>
+<kw name="Find Save Button" library="02_AddBioBot">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${BioSaveButton}</arg>
+</arguments>
+<msg timestamp="20180731 16:04:29.105" level="INFO">Clicking element 'xpath=//*[@id="js-pjax-container"]/div/div[1]/form/div/div/div/button[1]'.</msg>
+<status status="PASS" starttime="20180731 16:04:29.105" endtime="20180731 16:04:29.385"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${Delay}</arg>
+</arguments>
+<msg timestamp="20180731 16:04:31.385" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20180731 16:04:29.385" endtime="20180731 16:04:31.385"></status>
+</kw>
+<status status="PASS" starttime="20180731 16:04:29.105" endtime="20180731 16:04:31.385"></status>
+</kw>
+<status status="PASS" starttime="20180731 16:04:24.745" endtime="20180731 16:04:31.385"></status>
+</kw>
+<status status="PASS" starttime="20180731 16:04:22.610" endtime="20180731 16:04:31.385"></status>
+</kw>
+<kw name="Profile Flow" library="03_EditProfile">
+<kw name="Find Summary Button" library="02_AddBioBot">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${SummaryButton}</arg>
+</arguments>
+<msg timestamp="20180731 16:04:31.385" level="INFO">Clicking element 'xpath=//*[@id="user-links"]/li[3]/details/summary/span'.</msg>
+<status status="PASS" starttime="20180731 16:04:31.385" endtime="20180731 16:04:31.635"></status>
+</kw>
+<status status="PASS" starttime="20180731 16:04:31.385" endtime="20180731 16:04:31.635"></status>
+</kw>
+<kw name="Find Setting Menu" library="03_EditProfile">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${SettingMenu}</arg>
+</arguments>
+<msg timestamp="20180731 16:04:31.645" level="INFO">Clicking element 'xpath=//*[@id="user-links"]/li[3]/details/details-menu/ul/li[9]/a'.</msg>
+<status status="PASS" starttime="20180731 16:04:31.635" endtime="20180731 16:04:32.746"></status>
+</kw>
+<status status="PASS" starttime="20180731 16:04:31.635" endtime="20180731 16:04:32.746"></status>
+</kw>
+<kw name="Input Profile Form" library="03_EditProfile">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${Delay}</arg>
+</arguments>
+<msg timestamp="20180731 16:04:34.746" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20180731 16:04:32.746" endtime="20180731 16:04:34.746"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputName}</arg>
+<arg>${Name}</arg>
+</arguments>
+<msg timestamp="20180731 16:04:34.746" level="INFO">Typing text 'This is me' into text field 'xpath=//*[@id="user_profile_name"]'.</msg>
+<status status="PASS" starttime="20180731 16:04:34.746" endtime="20180731 16:04:34.796"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputUrl}</arg>
+<arg>${Url}</arg>
+</arguments>
+<msg timestamp="20180731 16:04:34.796" level="INFO">Typing text 'www.abc.com' into text field 'xpath=//*[@id="user_profile_blog"]'.</msg>
+<status status="PASS" starttime="20180731 16:04:34.796" endtime="20180731 16:04:34.826"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputCompany}</arg>
+<arg>${Company}</arg>
+</arguments>
+<msg timestamp="20180731 16:04:34.826" level="INFO">Typing text 'PT abc' into text field 'xpath=//*[@id="user_profile_company"]'.</msg>
+<status status="PASS" starttime="20180731 16:04:34.826" endtime="20180731 16:04:34.866"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${InputLocation}</arg>
+<arg>${Location}</arg>
+</arguments>
+<msg timestamp="20180731 16:04:34.866" level="INFO">Typing text 'Jakarta' into text field 'xpath=//*[@id="user_profile_location"]'.</msg>
+<status status="PASS" starttime="20180731 16:04:34.866" endtime="20180731 16:04:34.926"></status>
+</kw>
+<status status="PASS" starttime="20180731 16:04:32.746" endtime="20180731 16:04:34.926"></status>
+</kw>
+<kw name="Find Update Profile Button" library="03_EditProfile">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${UpdateProfilBtn}</arg>
+</arguments>
+<msg timestamp="20180731 16:04:34.926" level="INFO">Clicking element 'xpath=//html/body/div[4]/div[1]/div/div[2]/form[1]/div/p[2]/button'.</msg>
+<status status="PASS" starttime="20180731 16:04:34.926" endtime="20180731 16:04:36.826"></status>
+</kw>
+<status status="PASS" starttime="20180731 16:04:34.926" endtime="20180731 16:04:36.826"></status>
+</kw>
+<status status="PASS" starttime="20180731 16:04:31.385" endtime="20180731 16:04:36.826"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180731 16:04:36.826" endtime="20180731 16:04:38.857"></status>
+</kw>
+<status status="PASS" starttime="20180731 16:03:40.460" endtime="20180731 16:04:38.857" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20180731 16:03:40.235" endtime="20180731 16:04:38.857"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="MyTestSuite">MyTestSuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
